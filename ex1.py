@@ -7,11 +7,14 @@ matrix = input("Введите элементы матрицы через про
 # print(type(line))
 
 
-for i in range(len(matrix)):
-    _ = 0
-    for j in range((i + _), int(column)):
-        print(matrix[j])
-    _ += int(column)
+for i in range(0, len(matrix), 2):
+    # print(i)
+    # print(len(matrix), int(column))
+    # _ = 0
+    for j in range(i, int(column)):
+        # print(j, int(column))
+        print(matrix[j], end="")
+    # _ += int(column)
     print("\n")
 
 # def transon_matrix(matrix, column, line)
